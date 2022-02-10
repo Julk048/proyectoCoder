@@ -1,0 +1,80 @@
+.body__carro {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "principal"
+        "footer";
+    grid-template-columns: 100%; 
+    grid-template-rows: 7rem auto auto auto 7rem;  
+}
+header{
+    grid-area: header;
+  }
+  nav{
+    grid-area:nav;
+    
+  }
+  section#principal{
+    grid-area: principal;
+  }
+ 
+  footer{
+    grid-area:footer;
+  }
+  .carro__cuadro{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #ffc172;
+    width: 50%;
+    height: 20rem;
+    position: relative;
+  }
+  .titulo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #26798e;
+    margin: 1rem;
+  }
+  .titulo2{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    
+    
+  }
+  .texto{
+    font-family: 'Roboto', sans-serif;
+    margin:1rem 3rem 1rem 1rem;
+  }
+  .btn{
+      padding: 0.5rem;
+      background-color: #26798e;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      border-radius: 5rem;
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+      color: #ffc172;
+  }
+  @media screen and (max-width: 768px){
+    .carro__cuadro{
+        width: auto;
+      
+      }
+  @media screen and (max-width: 425px){
+        .carro__cuadro{
+            padding: 0.5rem;
+            margin: 0rem;
+           
+            width: auto;
+            height: 20rem;
+            position: relative;
+          }
+          .btn{
+            padding: 0.3rem;
+            
+            right: 0.5rem;
+            bottom: 0.5rem;
+            
+  }

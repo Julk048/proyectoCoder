@@ -1,0 +1,79 @@
+.body__productos {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "productos"
+        "footer";
+    
+    grid-template-rows: 7rem auto auto auto;  
+}
+.section__productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.cuadro__productos{
+    
+    height: 25rem;
+    width: 20rem;
+    border: #26798e solid 0.5rem;
+    border-radius: 10%;
+    margin: 2rem;
+    text-align: center;
+    
+
+}
+.producto{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 5%;
+
+}
+.producto__img{
+    width: 100%;
+    border-radius: 8%;
+}
+
+.producto__titulo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #26798e;
+}
+.producto__precio{
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn__comprar{
+    padding: 1rem;
+    background: #26798e;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-size: inherit;
+    color: #ffc172;
+    margin: 3rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+@media screen and (max-width: 768px){
+    .section__productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+@media screen and (max-width: 425px){
+    .section__productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .cuadro__productos{
+        margin: 1rem 0rem;
+       
+    }
+
+}

@@ -1,0 +1,98 @@
+/*--------------------------------login - registro-----------------------------*/
+.body__formulario {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "form"
+        "footer";
+    grid-template-columns: auto;  
+    grid-template-rows: 7rem auto auto auto;  
+}
+ 
+ header{
+   grid-area: header;
+ }
+ nav{
+   grid-area:nav;
+   
+ }
+ #form{
+   grid-area: form;
+ }
+ 
+ 
+ footer{
+   grid-area:footer;
+ }
+
+.formulario{
+    
+    width: 400px;
+ 
+    background-color: #26798e;
+    padding: 30px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    text-align: center;
+    box-shadow: 1rem 1.5rem 3rem #63caa7;
+    position: relative;
+}
+.form__titulo{
+    margin-bottom: 2rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #ffc172;
+}
+
+/*------------------------------------------------------------------------------------*/
+.formulario__registro{
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    border: solid 0.2rem #63caa7 ;
+    font-size: 1.2rem;
+    font-family:'Roboto', sans-serif;
+
+}
+.formulario__registro--btn{
+    color: white ;
+    background-color: #63caa7;
+    padding: 0.5rem;
+    border:none;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.formulario a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+    color: white;
+}
+.formulario a:hover{
+    text-decoration: underline;
+    text-align: center;
+    color: #63caa7;
+}
+#olvidopsw {
+    text-decoration: underline;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 2rem;
+    bottom: 7rem;
+    margin: 0rem;
+    font-size: 0.8rem;
+}
+@media screen and (max-width: 425px){
+    .formulario{
+        width: auto;
+    }
+
+}

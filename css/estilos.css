@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+    background-color: #ffe3b3;
+    /*background-image: url(../img/imagen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+}
+
+/*---------------------------------------------------------grilla principal--------------------------*/
+.body__index {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "productos"
+        "publicidad"
+        "footer";
+    grid-template-columns: auto;  
+    grid-template-rows: 7rem auto auto auto 7rem;  
+}
+ 
+ header{
+   grid-area: header;
+ }
+ nav{
+   grid-area:nav;
+   
+ }
+ section#productos{
+   grid-area: productos;
+ }
+ section#publicidad{
+   grid-area:publicidad;
+ }
+ footer{
+   grid-area:footer;
+ }
+ 
+ /*--------------------------------------header y menu-------------------------------------------*/
+.header__principal{
+   display: grid;
+   grid-template-columns: auto auto;
+   background-color: #26798e;
+   border-bottom: 0.2rem solid #ffc172;
+   align-items: center;
+   
+    
+}
+.header__logo{
+    height: 6.5rem;
+    
+}
+#logo__img{
+    height: 100%;
+        
+}
+.head__nombre{
+    font-size: 3rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #ffc172;
+}
+
+.header__menu{
+  
+    background-color: #26798e;
+    font-size: 2rem;
+    border-bottom: 0.2rem solid #ffc172;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+.header__menu a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #ffc172;
+    margin: 1rem;
+    border-radius: 0.4rem;
+}
+.header__menu a:hover{
+    box-shadow: #63caa7 1rem 1.5rem 3rem;
+}
+
+/*---------------------------------------------------index--------------------------------------------------------*/
+
+.section__categorias{
+ display: grid;
+ grid-template-rows: 50% 50%;   
+ padding: 2rem;
+
+}
+.cuadros__grandes{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.cuadros__medianos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.cuadro__grande{
+    
+    height: 20rem;
+    width: 20rem;
+    border: #26798e solid 0.5rem;
+    border-radius: 25%;
+    margin: 2rem;
+    position: relative;
+}
+.cuadros__grandes a{
+    position: absolute;
+    margin-top: 45%;
+    margin-left: -80%;
+    color: #26798e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color:lightgray;
+    border-radius: 4px;
+    padding: 0.5rem;
+        
+}
+.cuadros__medianos a{
+    position: absolute;
+    margin-top: 45%;
+    margin-left: -80%;
+    color: #26798e;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color:lightgray;
+    border-radius: 4px;
+    padding: 0.5rem;
+        
+}
+
+
+.cuadro__mediano{
+    
+    height: 15rem;
+    width: 15rem;
+    border: #26798e solid 0.5rem;
+    border-radius: 25%;
+    margin: 2rem;
+    position: relative;
+
+}
+.cuadro__img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    border-radius: 25%;
+    opacity: 0.8;
+}
+
+.section__publicidad {
+    margin: 1rem 0rem;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 0.5rem;
+    background-color: #26798e;
+    border-top:0.2rem solid #ffc172;
+    border-bottom:0.2rem solid #ffc172;
+    
+}
+.publicidad__titulo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #ffc172;
+    font-size: 2rem;
+}
+.publicidad__superior{
+    justify-self: center;
+}
+.publicidad__inferior{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cuadro__publicidad{
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border: 1rem solid #ffc172;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+.publicidad_img{
+    width:100%;
+    
+
+}
+
+
+/*------------------------------------footer----------------------------------*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #26798e;
+    border-top:0.2rem solid #ffc172;
+    align-items: center;
+    padding:2rem;
+}
+.footer__titulo{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color:#ffc172;
+    }
+.footer__text{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ffc172;
+}
+.redes{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+.imagenredes{
+    width: 100%;
+}
+.row__redes{
+    display: flex;
+ 
+}
+
+/*--------------------------------------------------------media queries--------------------------------------------*/
+@media screen and (max-width: 768px){
+  
+    .header__logo {
+        height: 6rem;
+        justify-self: center;
+    }  
+    .head__nombre{
+        font-size: 2.5rem;
+        
+    }
+    .header__menu{
+        
+        font-size: 1.32rem;
+        justify-content:flex-start;
+             
+    }
+    .section__categorias {
+        
+        grid-template-rows: auto auto;
+    }
+    .cuadros__grandes {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+       
+    }
+    .cuadros__medianos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .cuadro__publicidad{
+        width: 10rem;
+        height: 10rem;
+        overflow: hidden;
+        border: 0.5rem solid #ffc172;
+      
+    }
+    .section__publicidad {
+        flex-wrap: wrap;
+    }
+   
+
+}
+
+@media screen and (max-width: 425px){
+    .cuadro__publicidad{
+        width: 5rem;
+        height: 5rem;
+        border: 0.3rem solid #ffc172;
+      
+    }
+    .publicidad__titulo{
+        
+        font-size: 1rem;
+    }
+    .header__menu{
+  
+        background-color: #26798e;
+        font-size: 2rem;
+        border-bottom: 0.2rem solid #ffc172;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+}
+/*font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
