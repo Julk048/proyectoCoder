@@ -75,5 +75,9 @@
         margin: 1rem 0rem;
        
     }
-
+    .producto__precio {
+        
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
 }
