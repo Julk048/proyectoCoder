@@ -22,7 +22,7 @@ html{
         "publicidad"
         "footer";
     grid-template-columns: auto;  
-    grid-template-rows: 7rem auto auto auto 7rem;  
+    grid-template-rows: auto auto auto auto auto;  
 }
  
  header{
@@ -283,6 +283,15 @@ html{
 }
 
 @media screen and (max-width: 425px){
+    .head__nombre{
+        font-size: 2.5rem;
+       
+    }
+    .header__menu{
+  
+        font-size: 1rem;
+        
+    }
     
     .section__categorias{
         display: flex;
@@ -295,6 +304,7 @@ html{
         height: 18rem;
         width: 18rem;
         margin: 0rem;
+        margin-top: 1rem;
         
     }
        
@@ -303,6 +313,13 @@ html{
         height: 5rem;
         border: 0.3rem solid #ffc172;
       
+    }
+    .cuadro__mediano{
+    
+        
+        margin: 1rem;
+   
+    
     }
 
     .publicidad__titulo{
